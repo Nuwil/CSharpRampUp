@@ -23,7 +23,7 @@ public class RampUp2
             }
             catch (FormatException)
             {
-                Console.WriteLine("INVALID INPUT! PLEASE ENTER NUMBERS ONLY!\n====================================================\n");
+                Console.WriteLine(">>INVALID INPUT! PLEASE ENTER NUMBERS ONLY!");
                 validInput = false;
             }
         }
@@ -44,7 +44,7 @@ public class RampUp2
             }
             catch (FormatException)
             {
-                Console.WriteLine("INVALID INPUT! PLEASE ENTER NUMBERS ONLY!\n====================================================\n");
+                Console.WriteLine(">>INVALID INPUT! PLEASE ENTER NUMBERS ONLY!");
             }
         }
         //===========END OF LENGTH CONVERTER=============//
@@ -64,7 +64,7 @@ public class RampUp2
             }
             catch (FormatException)
             {
-                Console.WriteLine("INVALID INPUT! PLEASE ENTER NUMBERS ONLY!\n====================================================\n");
+                Console.WriteLine(">>INVALID INPUT! PLEASE ENTER NUMBERS ONLY!");
             }
         }
         //===========END OF TEMPERATURE CONVERTER=============//
@@ -91,7 +91,7 @@ public class RampUp2
             }
             catch (FormatException)
             {
-                Console.WriteLine("INVALID INPUT! PLEASE ENTER NUMBERS ONLY!\n====================================================\n");
+                Console.WriteLine(">>INVALID INPUT! PLEASE ENTER NUMBERS ONLY!");
             }
         }
         //===========END OF AVERAGE AGE OF STUDENT=============//
@@ -119,8 +119,8 @@ public class RampUp2
          string abGorlock = "Magic";
          string abEvil = "Dark Magic";
          //===Story===//
-         Console.WriteLine($"Once upon a time, in a far-off land, there lived five brave heroes named {char1} 'The Hammer' (equipped with {weaponNoel}), {char2} 'The Archer' (armed with {weaponGully}), {char3} 'The Brainiac' (with the {itemAlex}), {char4} 'The Sorceress' (wielding the {itemAngel}), and {char5} 'The Guardian' (clad in the {itemGorlock}). They were each skilled in different areas, such as {abNoel}, {abGully}, {abAlex}, {abAngel}, and {abGorlock}. Together, they embarked on a quest to defeat the evil sorcerer, {evilChar} (armed with the {weaponEvil}), who threatened to destroy their kingdom. Along the way, they encountered many challenges and obstacles but always found a way to overcome them thanks to their diverse skills and teamwork.")
-         Console.WriteLine($"One day, while journeying through a dense forest, they stumbled upon a mysterious cave. As they ventured deeper into the darkness, they discovered an ancient treasure trove filled with powerful weapons and magical artifacts. But suddenly, {evilChar} appeared before them, wielding his {abEvil} and determined to claim the treasure for himself. The heroes knew they had to stop him at all costs. In a thrilling battle, they fought bravely against {evilChar} and his minions, using everything they had learned on their journey. With their combined might, they managed to defeat the villainous sorcerer and save the kingdom from destruction. The people rejoiced at their victory, hailing the five heroes as saviors of the realm. And so, they returned home, proud of their accomplishment and ready for whatever new adventures lay ahead. ")
+         Console.WriteLine($"Once upon a time, in a far-off land, there lived five brave heroes named {char1} 'The Hammer' (equipped with {weaponNoel}), {char2} 'The Archer' (armed with {weaponGully}), {char3} 'The Brainiac' (with the {itemAlex}), {char4} 'The Sorceress' (wielding the {itemAngel}), and {char5} 'The Guardian' (clad in the {itemGorlock}). They were each skilled in different areas, such as {abNoel}, {abGully}, {abAlex}, {abAngel}, and {abGorlock}. Together, they embarked on a quest to defeat the evil sorcerer, {evilChar} (armed with the {weaponEvil}), who threatened to destroy their kingdom. Along the way, they encountered many challenges and obstacles but always found a way to overcome them thanks to their diverse skills and teamwork.\n");
+         Console.WriteLine($"One day, while journeying through a dense forest, they stumbled upon a mysterious cave. As they ventured deeper into the darkness, they discovered an ancient treasure trove filled with powerful weapons and magical artifacts. But suddenly, {evilChar} appeared before them, wielding his {abEvil} and determined to claim the treasure for himself. The heroes knew they had to stop him at all costs. In a thrilling battle, they fought bravely against {evilChar} and his minions, using everything they had learned on their journey. With their combined might, they managed to defeat the villainous sorcerer and save the kingdom from destruction. The people rejoiced at their victory, hailing the five heroes as saviors of the realm. And so, they returned home, proud of their accomplishment and ready for whatever new adventures lay ahead. \n====================================================\n");
         //===========END OF STORY=============//
         
         validInput = false;
@@ -145,6 +145,7 @@ public class RampUp2
                         Console.WriteLine();
                         validInput = true;
                     }
+                    Console.WriteLine("====================================================\n");
                 }
             }
             else
@@ -156,7 +157,7 @@ public class RampUp2
         //===========END OF PATTERN 1=============//
 
 
-        bool validInput = false;
+        validInput = false;
         while (!validInput)
         {
             Console.Write("Enter a number: ");
@@ -184,6 +185,7 @@ public class RampUp2
                     Console.WriteLine();
                     Console.WriteLine($"Output: {sum}");
                     validInput = true;
+                    Console.WriteLine("====================================================\n");
                 }
             }
             else
@@ -193,7 +195,7 @@ public class RampUp2
             }
         }
         //===========END OF PATTERN 2=============//
-        bool validInput = false;
+        validInput = false;
         while(!validInput){
             Console.WriteLine("Enter a number: ");
             string userNum = Console.ReadLine();
@@ -215,6 +217,7 @@ public class RampUp2
                         Console.WriteLine();
                         validInput = true;
                     }
+                    Console.WriteLine("====================================================\n\t\t\t\tEND OF CSHARPRAMPUP\n====================================================");
                 }
             }
             else
